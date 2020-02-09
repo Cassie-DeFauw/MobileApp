@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cassie's Favorites</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<link rel="stylesheet" href="project.min.css" />
+<link rel="stylesheet" href="jquery.mobile.icons.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+</head>
+<body>
+
+<div id="page" data-role="page" data-theme="a" data-add-back-btn="true">
+
+  <div data-role="header" data-theme="a">
+    <div class="logo">
+      <img src="https://winaero.com/blog/wp-content/uploads/2018/08/favorites-heart-icon-1-big-256.png" width="50" height="50">
+    </div>
+  </div>
+
+  <div data-role="header">
+    <h1>Cassie's Favorites</h1>
+    <a href="#myPanel" class="ui-btn ui-btn-inline">Open Panel</a>
+  </div>
+
+  <div data-role="panel" id="myPanel">
+    <h2>Navigation</h2>
+      <ul data-role="listview" data-theme="c">
+        <li class="menu"><a href="movies.html">Favorite Movies</a></li>
+        <li class="menu"><a href="books.html">Favorite Books</a></li>
+      </ul>
+  </div>
+
+  <div data-role="main" class="ui-content" id="content">
+    <div class="column">
+      <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/29542972_1750444615017082_3517758902439640095_n.jpg?_nc_cat=110&_nc_ohc=D6wx5abA8-cAX_7_unB&_nc_ht=scontent-msp1-1.xx&oh=39a316ff53191c3e9cafd2b1d30cdd33&oe=5E8FCFB0" style="width:100%">
+      <p>This is an image of my friend and I in New York City.
+    </div>
+      <div class="column">
+        <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t31.0-8/18278760_1411586312236249_6402441487931320103_o.jpg?_nc_cat=111&_nc_ohc=4IvsI-THfFQAX_-L3ml&_nc_ht=scontent-msp1-1.xx&oh=69dc10a565e7b1ac8d5da037523dee97&oe=5E9BA606" style="width:100%">
+        <p>Hi, my name is Cassandra DeFauw but I usually go by Cassie. This website is dedicated to my favorite movies and my favorite books. Some facts about me are that I'm currently in school to earn my Associate's degree. I enjoy watching scary movies, practicing SFX makeup, and drawing. The above image is of my dad, me, and my mom.
+      </div>
+      <div class="column">
+        <img src="https://scontent-msp1-1.xx.fbcdn.net/v/t1.0-9/32266800_1795279547200255_6665923675868364800_n.jpg?_nc_cat=104&_nc_ohc=4K7lJ0kA1t8AX-bO3so&_nc_ht=scontent-msp1-1.xx&oh=c59551f29f0b2b47d3b91ae1df6dce14&oe=5ED2280D" style="width:100%">
+        <p>This is an image of my sister and I at my last choir concert in high school.</p>
+      </div>
+    </div>
+
+  <div data-role="footer">
+    <h1>Cassie's Favorites © 2020</h1>
+  </div>
+
+</div>
+
+</body>
+</html>
